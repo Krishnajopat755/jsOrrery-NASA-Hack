@@ -1,0 +1,86 @@
+<!doctype html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+	<head>	
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="author" content="CODE_BASHERS">
+		<title>jsOrrery - Javascript Solar System Simulator</title>
+		<style>
+			body {
+				opacity: 0;
+			}
+		</style>
+		<meta property="og:title" content="jsOrrery - Solar System Simulator" /> 
+		<meta property="og:image" content="https://mgvez.github.io/jsorrery/img/jsorrery_likefb.jpg" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:description" content="See the Solar System in your browser with jsOrrery, a Javascript / WebGL orbital mechanics simulator." />
+		<meta property="og:url" content="https://mgvez.github.io/jsorrery/" />
+		<meta name="twitter:creator" content="@m_vezina" />
+		<meta property="fb:app_id" content="400609246982045" />
+		<link rel="canonical" href="https://mgvez.github.io/jsorrery/" />
+		<link href='http://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+	<link href="jsorrery.css" rel="stylesheet"></head>
+	<body id="jsorrery">
+		<nav id="gui">
+			
+			<div id="status">
+				<div id="startCont" class="inputContainer"></div>
+				<div id="dateDisplay"></div>
+			</div>
+			<label id="scenarioLabel">
+				<div>Scenario </span></div>
+				<div id="scenarioCont" class="inputContainer"></div>
+			</label>
+			<label id="dateLabel">
+				<div>Date </span></div>
+				<div id="dateCont" class="inputContainer"></div>
+			</label>
+			<label id="lookFromLabel">
+				<div>Point of view </span></div>
+				<div id="lookFromCont" class="inputContainer"></div>
+			</label>
+
+			<label id="geolocLabel">
+				<div>Lat/Lng</div>
+				<div id="geolocCont" class="inputContainer"></div>
+			</label>
+			
+			<label id="lookAtLabel">
+				<div>Look at </span></div>
+				<div id="lookAtCont" class="inputContainer"></div>
+			</label>
+			<label id="planetScaleLabel">
+				<div>Planet Scale <span class="valDisplay"></span>x </span></div>
+				<div id="planetScaleCont" class="inputContainer"></div>
+			</label>
+			<label id="deltaTLabel">
+				<div>Animation speed </span></div>
+				<div id="deltaTCont" class="inputContainer"></div>
+			</label>
+
+			
+		
+			
+		<div class="preload">
+			<div class="orbit"><div class="planet"></div></div>
+			<div class="title">
+				<h1>jsorrery</h1>
+				<h2>solar system</h2>
+			</div>
+		</div>
+
+		
+		<script src="assets/data/elp.js"></script>
+		<script src="assets/data/vsop-earth.js"></script>
+		<script>
+
+			window.onJsOrreryLoaded = function(JSOrrery){
+				const jsOrrery = new JSOrrery('jsorrery');
+				jsOrrery.loadDefaultScenario();
+			}
+
+		</script>
+	<script type="text/javascript" src="jsorrery.js"></script></body>
+</html>
