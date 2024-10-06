@@ -2,7 +2,8 @@
 
 jsOrrery is a Solar System / orbital mechanics simulation, or orrery, that I wrote in WebGL and Javascript. The main feature of jsOrrery is that the planets positions are accurate in regards to the date you set, and it has the consequence that you can observe things that happen in the real Solar System.
 
-
+project deployed at : https://js-orrery-nasa-hack.vercel.app/
+linkedin : https://www.linkedin.com/in/krishna-jopat-7036ab314/
 
 # Usage
 
